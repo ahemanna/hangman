@@ -74,7 +74,9 @@ while True:
             clear_console(lives, message, wins, losses)
             print("You win.")
 
-    play_more = input("Do you want to play again? (Y/N): ")
+    play_more = input(
+        "Do you want to play again? (Press Y for yes, any other key for no): "
+    )
     # Exit if the player does not want to continue
     if not play_more.lower() == "y":
         break
